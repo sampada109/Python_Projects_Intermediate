@@ -1,0 +1,16 @@
+{% extends 'home.html' %}
+
+
+{% block main %}
+
+    <h1 class="display-4">Here's your generated QR Code 🥳 </h1>
+
+    <div class="container m-3 p-5 d-flex align-items-center justify-content-center">
+
+        <img src="{{ url_for('static', filename = filename) }}" alt="qrcode">
+
+        <a href="{{ url_for('download_qr', filename = filename) }}"><button type="button" class="btn btn-dark btn-lg px-5 py-3 rounded-pill ms-5">Download QR Code <i class="bi bi-download ms-3"></i></button></a>
+
+    </div>
+
+{% endblock %}
