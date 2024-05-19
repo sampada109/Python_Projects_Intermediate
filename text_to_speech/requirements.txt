@@ -1,0 +1,7 @@
+gtts (google text to speech)
+
+playsound==1.2.2 (to automatically play audio on the server side)
+
+pyttsx3 (another liberary for converting text to audio, if you want to use it)
+
+langdetect (for detecting the the language)

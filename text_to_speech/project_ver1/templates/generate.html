@@ -1,0 +1,18 @@
+{% extends 'home.html' %}
+
+
+{% block main %}
+    <div class="d-flex align-items-center justify-content-center mt-5">
+        <div class="card col-md-8 p-5 mt-5 shadow-lg">
+            <h2 class="display-5">Your text is coverted successfully !</h2>
+            <h4 class="lead fs-3
+            ">You can play and download the audio.</h4>
+    
+            <div class="mt-5" id="audio-block">
+                <audio src="{{ url_for('static', filename = 'generated_audios/audio.mp3') }}" controls></audio>
+                <p>Detected Language : {{ lang }}</p>
+            </div>
+            
+        </div>
+    </div>
+{% endblock %}
